@@ -23,10 +23,10 @@ public class Document implements IElement<JSONObject>{
 	private Object meta = null;
 	
 	private JSONapi jsonapi = null;
-	private HashMapJSON<String,Link,JSONObject> links =null;
+	private HashMapJSON<String,Link> links =null;
 	private Link self = null;
 	private ArrayListJSON<Resource> included = null;
-	private HashMapJSON<String,IData,JSONObject> related =null;
+	private HashMapJSON<String,IData> related =null;
 	
 	
 	/**
