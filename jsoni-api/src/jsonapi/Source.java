@@ -11,7 +11,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  *
  */
-public class Source  implements IElement{
+public class Source  implements IElement<JSONObject>{
 
 	private String pointer;
 	private String parameter;
@@ -35,8 +35,4 @@ public class Source  implements IElement{
 		return json;
 	}
 
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
-	}
 }

@@ -15,7 +15,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  *
  */
-public class Document implements IElement{
+public class Document implements IElement<JSONObject>{
 	
 	
 	private IData data=null;
@@ -23,10 +23,10 @@ public class Document implements IElement{
 	private Object meta = null;
 	
 	private JSONapi jsonapi = null;
-	private HashMapJSON<String,Link> links =null;
+	private HashMapJSON<String,Link,JSONObject> links =null;
 	private Link self = null;
 	private ArrayListJSON<Resource> included = null;
-	private HashMapJSON<String,IData> related =null;
+	private HashMapJSON<String,IData,JSONObject> related =null;
 	
 	
 	/**
@@ -121,8 +121,8 @@ public class Document implements IElement{
 			jsonobj.put("related", this.related.toJson());
 			jsonobj.put("links", this.related.toJson());
 			
-			jsonobj.put("error", this.error.toJsonCollection());
-			jsonobj.put("included", this.included.toJsonCollection());
+			jsonobj.put("error", this.error.toJson());
+			jsonobj.put("included", this.included.toJson());
 			
 			
 			
@@ -134,16 +134,6 @@ public class Document implements IElement{
 		}
 		
 		return jsonobj;
-	}
-
-
-
-
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		// TODO Auto-generated method stub
-		
-		throw new UnsupportedOperationException("Not supported yet");
 	}
 
 }

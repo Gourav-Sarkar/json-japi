@@ -16,7 +16,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  *
  */
-public class HashMapJSON<K,V> extends HashMap implements IJSONSerialize{
+public class HashMapJSON<K,V> extends HashMap implements IJSONSerialize<JSONObject>{
 
 	/**
 	 * 
@@ -50,9 +50,5 @@ public class HashMapJSON<K,V> extends HashMap implements IJSONSerialize{
 		return json;
 	}
 
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
-	}
 	
 }

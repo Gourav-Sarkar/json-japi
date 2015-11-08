@@ -13,7 +13,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  *
  */
-public class ArrayListJSON<V extends IJSONSerialize> extends ArrayList implements IJSONSerialize{
+public class ArrayListJSON<V extends IJSONSerialize> extends ArrayList implements IJSONSerialize<JSONArray>{
 
 	/**
 	 * 
@@ -33,15 +33,7 @@ public class ArrayListJSON<V extends IJSONSerialize> extends ArrayList implement
 	
 	
 	@Override
-	public JSONObject toJson() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
-	}
-	
-	
-	
-
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
+	public JSONArray toJson() throws JSONException {
 		JSONArray json = new JSONArray();
 		
 		for(V res : (V[]) this.toArray())
@@ -51,5 +43,6 @@ public class ArrayListJSON<V extends IJSONSerialize> extends ArrayList implement
 		
 		return json;
 	}
+	
 
 }

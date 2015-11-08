@@ -4,10 +4,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public interface IJSONSerialize {
+public interface IJSONSerialize<S> {
 	public  void toObject(JSONObject json);
-	public JSONObject toJson() throws JSONException;
+	public S toJson() throws JSONException;
 	//public  void toObject(JSONObject json);
-	public JSONArray toJsonCollection() throws JSONException;
+	//public JSONArray toJsonCollection() throws JSONException;
 
 }

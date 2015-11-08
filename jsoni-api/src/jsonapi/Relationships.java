@@ -15,7 +15,7 @@ import exception.JSONApiSpecException;
  * @author gourav sarkar
  *
  */
-public class Relationships  implements IElement{
+public class Relationships  implements IElement<JSONObject>{
 	
 
 	private HashMapJSON<String,Link> links=  null;
@@ -39,9 +39,5 @@ public class Relationships  implements IElement{
 	public JSONObject toJson() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
 	}
 }

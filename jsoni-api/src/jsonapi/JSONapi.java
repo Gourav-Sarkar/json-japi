@@ -11,7 +11,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  *
  */
-public class JSONapi  implements IElement{
+public class JSONapi  implements IElement<JSONObject>{
 	private String version="1.0";
 
 	public boolean isValid()
@@ -31,11 +31,6 @@ public class JSONapi  implements IElement{
 		json.put("version", this.version);
 		
 		return json;
-	}
-
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
 	}
 
 }

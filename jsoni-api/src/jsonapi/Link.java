@@ -13,7 +13,7 @@ import org.json.JSONObject;
  * @author gourav sarkar
  * 
  */
-public class Link implements IElement{
+public class Link implements IElement<JSONObject>{
 
 	/**
 	 * @todo Change to specific object
@@ -60,10 +60,6 @@ public class Link implements IElement{
 		return json;
 	}
 
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
-	}
 
 	@Override
 	public boolean isValid() {

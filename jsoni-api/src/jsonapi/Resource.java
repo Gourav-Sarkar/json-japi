@@ -17,7 +17,7 @@ import exception.JSONApiSpecException;
  */
 public class Resource implements IData {
 
-	private class ResourceID implements IElement {
+	private class ResourceID implements IElement<JSONObject> {
 		private String id = "";
 		private String type = "";
 
@@ -57,11 +57,6 @@ public class Resource implements IData {
 			json.put("type", this.type);
 
 			return json;
-		}
-
-		@Override
-		public JSONArray toJsonCollection() throws JSONException {
-			throw new UnsupportedOperationException("Not supported yet");
 		}
 
 	}
@@ -142,16 +137,6 @@ public class Resource implements IData {
 		
 		return json;
 	}
-
-
-
-
-	@Override
-	public JSONArray toJsonCollection() throws JSONException {
-		throw new UnsupportedOperationException("Not supported yet");
-	}
-
-
 
 
 	@Override
