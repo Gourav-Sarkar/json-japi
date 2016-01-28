@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3375), pid=5288, tid=2900
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_24-b07
+# Java VM: Java HotSpot(TM) Client VM (19.1-b02 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00219800):  JavaThread "Unknown thread" [_thread_in_vm, id=2900, stack(0x00430000,0x00480000)]
+
+Stack: [0x00430000,0x00480000],  sp=0x0047f87c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1fa487]
+V  [jvm.dll+0xa337b]
+V  [jvm.dll+0x747c8]
+V  [jvm.dll+0x75fef]
+V  [jvm.dll+0x1c9fc5]
+V  [jvm.dll+0x1ca826]
+V  [jvm.dll+0x1cabd5]
+V  [jvm.dll+0x1cac69]
+V  [jvm.dll+0x1cad2c]
+V  [jvm.dll+0x1cadaa]
+V  [jvm.dll+0x1cae8d]
+V  [jvm.dll+0x1cb132]
+V  [jvm.dll+0x1ea453]
+V  [jvm.dll+0x1ea82c]
+V  [jvm.dll+0xd9b4c]
+V  [jvm.dll+0x1e3b96]
+V  [jvm.dll+0x1033b0]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x1336a]
+C  [ntdll.dll+0x3bf32]
+C  [ntdll.dll+0x3bf05]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00219800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2900, stack(0x00430000,0x00480000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files (x86)\Java\jre6\bin\javaw.exe
+0x77250000 - 0x773d0000 	C:\Windows\SysWOW64\ntdll.dll
+0x74d50000 - 0x74e60000 	C:\Windows\syswow64\kernel32.dll
+0x750a0000 - 0x750e7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x71b30000 - 0x71c1d000 	C:\Program Files\Bitdefender\Bitdefender 2015\Active Virus Control\Avc3_00325_007\avcuf32.dll
+0x75b80000 - 0x75c20000 	C:\Windows\syswow64\ADVAPI32.dll
+0x760e0000 - 0x7618c000 	C:\Windows\syswow64\msvcrt.dll
+0x74ce0000 - 0x74cf9000 	C:\Windows\SysWOW64\sechost.dll
+0x759e0000 - 0x75ad0000 	C:\Windows\syswow64\RPCRT4.dll
+0x74c70000 - 0x74cd0000 	C:\Windows\syswow64\SspiCli.dll
+0x74c60000 - 0x74c6c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x758e0000 - 0x759e0000 	C:\Windows\syswow64\USER32.dll
+0x74ee0000 - 0x74f70000 	C:\Windows\syswow64\GDI32.dll
+0x77220000 - 0x7722a000 	C:\Windows\syswow64\LPK.dll
+0x75ad0000 - 0x75b6d000 	C:\Windows\syswow64\USP10.dll
+0x75c40000 - 0x75ca0000 	C:\Windows\system32\IMM32.DLL
+0x751e0000 - 0x752ac000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jre6\bin\msvcr71.dll
+0x6d7f0000 - 0x6da96000 	C:\Program Files (x86)\Java\jre6\bin\client\jvm.dll
+0x6ee40000 - 0x6ee72000 	C:\Windows\system32\WINMM.dll
+0x70e70000 - 0x70ebc000 	C:\Windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Program Files (x86)\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files (x86)\Java\jre6\bin\java.dll
+0x6d280000 - 0x6d288000 	C:\Program Files (x86)\Java\jre6\bin\hpi.dll
+0x74cd0000 - 0x74cd5000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d7e0000 - 0x6d7ef000 	C:\Program Files (x86)\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:E:\adt-bundle-windows-x86-20130522\sdk\platforms\android-17\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 2561 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames test.DocumentTestCase
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files (x86)/Java/jre6/bin/client;C:/Program Files (x86)/Java/jre6/bin;C:/Program Files (x86)/Java/jre6/lib/i386;E:\Program Files (x86)\EasyPHP-DevServer-13.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;E:\wamp\bin\php\php5.4.3;C:\ProgramData\ComposerSetup\bin;E:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;E:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Ruby21\bin;E:\adt-bundle-windows-x86-20130522\eclipse;
+USERNAME=gourav sarkar
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt
+
+Memory: 4k page, physical 8074132k(5220264k free), swap 16146408k(12554328k free)
+
+vm_info: Java HotSpot(TM) Client VM (19.1-b02) for windows-x86 JRE (1.6.0_24-b07), built on Feb  2 2011 17:44:41 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Mon Nov 09 02:02:09 2015
+elapsed time: 0 seconds
+
